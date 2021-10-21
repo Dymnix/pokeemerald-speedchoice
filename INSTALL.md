@@ -35,7 +35,7 @@ You can now proceed to the installation section
 To set up the repository:
 
 	git clone https://github.com/pret/agbcc
-	git clone https://github.com/ProjectRevoTPP/pokeemerald-speedchoice
+	git clone https://github.com/Dymnix/pokeemerald-speedchoice
 
 	cd ./agbcc
 	./build.sh
