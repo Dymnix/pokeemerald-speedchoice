@@ -2,6 +2,8 @@
 
 This is a version of the Pokemon Emerald Speedchoice by Revo (https://github.com/ProjectRevoTPP/pokeemerald-speedchoice) that will be compatible with the Pokemon Emerald Full Item Randomizer once finished.
 
+This project is currently active and ongoing as of 10/21/2021. 
+
 * [Original decompilation by pret](https://github.com/pret/pokeemerald)
 
 It builds the following ROM:
