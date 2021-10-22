@@ -4,8 +4,6 @@ This is a version of the Pokemon Emerald Speedchoice by Revo (https://github.com
 
 This project is currently active and ongoing as of 10/21/2021. 
 
-* [Original decompilation by pret](https://github.com/pret/pokeemerald)
-
 It builds the following ROM:
 
 * pokeemerald-speedchoice.gba
@@ -43,6 +41,8 @@ To set up the repository, see [INSTALL.md](INSTALL.md).
 * Other possible changes as I think of them. 
 
 ## See also
+
+* [Original decompilation by pret](https://github.com/pret/pokeemerald)
 
 Other disassembly and/or decompilation projects:
 * [**Pokémon Red and Blue**](https://github.com/pret/pokered)
