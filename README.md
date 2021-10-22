@@ -1,4 +1,4 @@
-# Pokémon Emerald Speedchoice - Full Item Rando Edition 
+# Pokémon Emerald Speedchoice - Full Item Randomizer Edition 
 
 This is a version of the Pokemon Emerald Speedchoice by Revo (https://github.com/ProjectRevoTPP/pokeemerald-speedchoice) that will be compatible with the Pokemon Emerald Full Item Randomizer once finished.
 
