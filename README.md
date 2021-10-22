@@ -12,6 +12,13 @@ It builds the following ROM:
 
 To set up the repository, see [INSTALL.md](INSTALL.md).
 
+## Changelog
+
+* Creating a mach bike path on Route 103 to allow travel across the water without Surf. 
+* Creating an acro bike path on Route 115 to allow early access to Meteor Falls. 
+* Removing the "Start with Bike" and "Super Bike" features, as those would defeat the purpose of the item rando.
+* Shifting the locations of the Kecleon on Route 120 in order to require the Devon Scope item (not just talking to Steven) in order to pass between the two halves of the route.
+
 ## Planned Changes/Features
 
 * New preset on the speedchoice menu to quickly set the options for item rando.
@@ -24,10 +31,6 @@ To set up the repository, see [INSTALL.md](INSTALL.md).
 * The SSTidal will be available as soon as you have access to Slateport and have the SSTicket in your inventory. This allows early access to Lilycove. 
 * Additionally, the Frontier Pass will be repurposed to allow access to the Battle Frontier when paired with the SSTicket.
 * Steven's Room in Meteor Falls will now only open when talking to Scott at his house in the Battle Frontier after obtaining all 7 gold Battle Frontier symbols (14 symbols total). 
-* Creating a mach bike path on Route 103 to allow travel across the water without Surf. 
-* Creating an acro bike path on Route 115 to allow early access to Meteor Falls. 
-* Removing the "Start with Bike" and "Super Bike" features, as those would defeat the purpose of the item rando.
-* Shifting the locations of the Kecleon on Route 120 in order to require the Devon Scope item (not just talking to Steven) in order to pass between the two halves of the route.
 * Removing the group of Wailmer blocking Route 124 and the old man blocking Cave of Origin from the start. 
 * Rayquaza event in Sootopolis will be skipped, and Rayquaza will be available as soon as you talk to Wallace in Cave of Origin.
 * Sootopolis Gym will always be open.
