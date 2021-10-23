@@ -25,7 +25,6 @@ To set up the repository, see [INSTALL.md](INSTALL.md).
 * Changing how hidden items are handled in order to allow for the above change as well. 
 * Frontier Symbols will be obtained progressively from Silver to Gold, regardless of which you find first.
 * The Pokedex and National Dex will be obtained progressively from Regional Dex to National Dex, regardless of which you find first. 
-* Removing the ability to dex for Non-Hoenn mons until you have obtained the National Dex. 
 * The SSTidal will be available as soon as you have access to Slateport and have the SSTicket in your inventory. This allows early access to Lilycove. 
 * Additionally, the Frontier Pass will be repurposed to allow access to the Battle Frontier when paired with the SSTicket.
 * Steven's Room in Meteor Falls will now only open when talking to Scott at his house in the Battle Frontier after obtaining all 7 gold Battle Frontier symbols (14 symbols total). 
