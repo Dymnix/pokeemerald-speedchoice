@@ -37,7 +37,8 @@ To set up the repository, see [INSTALL.md](INSTALL.md).
 * Briney will only let you take his boat if you have obtained the Devon Goods AND the Letter. However, talking to Steven will not be required to take the boat from Dewford to Slateport. 
 * You will not be able to hand Steven the letter for his item unless the Letter is in your inventory.
 * Dock in Slateport will not acknowledge the Devon Goods unless you have them in your inventory, making them required to access the Slateport Museum, as well as Route 110 without a bike.  
-* Berry Tree randomization??????????????
+* Add berry trees to pool??????????????
+* Battle Frontier facilities will have two checks each, one for each type of symbol. However, each Frontier Brain can be fought after one run of their respective facility, and they will give out both checks after their first battle (so no need to beat the same Frontier Brain multiple times.) Additionally, pokemon and level restrictions will be lifted (yes, you can bring your Level 70 Mewtwo into the Level 50 mode), and some facilities will be restructured to require less rounds per run (Such as 4 battles in Battle Factory verses 7 per run).
 * Other possible changes as I think of them. 
 
 ## See also
