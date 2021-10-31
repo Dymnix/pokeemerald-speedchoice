@@ -953,7 +953,7 @@ static bool8 IsWinStreakActive(u32 challenge)
     if (gSaveBlock2Ptr->frontier.winStreakActiveFlags & challenge)
         return TRUE;
     else
-        return FALSE;
+        return TRUE;
 }
 
 static void PrintAligned(const u8 *str, s32 y)
