@@ -16,6 +16,8 @@ To set up the repository, see [INSTALL.md](INSTALL.md).
 * Creating an acro bike path on Route 115 to allow early access to Meteor Falls. 
 * Removing the "Start with Bike" and "Super Bike" features, as those would defeat the purpose of the item rando.
 * Shifting the locations of the Kecleon on Route 120 in order to require the Devon Scope item (not just talking to Steven) in order to pass between the two halves of the route.
+* Each Frontier Brain can be fought immediately (Factory, Pike), after one additional fight (Palace, Arena, Tower), or at the end of one run through of the facility (Dome). 
+* The Battle Pyramid Brain can be fought after completing one floor of the pyramid.
 
 ## Planned Changes/Features
 
@@ -37,7 +39,7 @@ To set up the repository, see [INSTALL.md](INSTALL.md).
 * You will not be able to hand Steven the letter for his item unless the Letter is in your inventory.
 * Dock in Slateport will not acknowledge the Devon Goods unless you have them in your inventory, making them required to access the Slateport Museum, as well as Route 110 without a bike.  
 * Add berry trees to pool??????????????
-* Battle Frontier facilities will have two checks each, one for each type of symbol. However, each Frontier Brain can be fought after one (shortened) run of their respective facility, and they will give out both checks after their first battle (so no need to beat the same Frontier Brain multiple times.) Additionally, pokemon and level restrictions will be lifted (yes, you can bring your Level 70 Mewtwo into the Level 50 mode), and some facilities will be restructured to require less rounds per run (Such as 4 battles in Battle Factory verses 7 per run).
+* Battle Frontier facilities will have one check each for defeating the brain. No progress items will be placed beyond the first brain fights. Additionally, pokemon and level restrictions will be lifted (yes, you can bring your Level 70 Mewtwo into the Level 50 mode), and some facilities will be restructured to require less rounds per run (Such as 4 battles in Battle Factory verses 7 per run).
 * Other possible changes as I think of them. 
 
 ## See also
