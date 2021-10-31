@@ -97,7 +97,7 @@ BattlePyramid_WarpToNextFloor:: @ 8252BE8
 	frontier_get FRONTIER_DATA_BATTLE_NUM  @ Floor number
 	addvar VAR_RESULT, 1
 	frontier_set FRONTIER_DATA_BATTLE_NUM, VAR_RESULT
-	compare VAR_RESULT, 7
+	compare VAR_RESULT, 1
 	goto_if_eq BattlePyramid_WarpToTop
 	pyramid_seedfloor
 	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, 0
