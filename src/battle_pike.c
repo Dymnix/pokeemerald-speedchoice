@@ -548,7 +548,7 @@ void CallBattlePikeFunction(void)
 static void SetRoomType(void)
 {
     u8 roomType = GetNextRoomType();
-    sRoomType = roomType;
+    sRoomType = PIKE_ROOM_BRAIN;
 }
 
 static void SetupRoomObjectEvents(void)
