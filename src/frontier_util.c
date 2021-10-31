@@ -1983,8 +1983,8 @@ static void AppendIfValid(u16 species, u16 heldItem, u16 hp, u8 lvlMode, u8 monL
 
     if (gFrontierBannedSpecies[i] != 0xFFFF)
         return;
-    if (lvlMode == FRONTIER_LVL_50 && monLevel > 50)
-        return;
+    //if (lvlMode == FRONTIER_LVL_50 && monLevel > 50)
+    //    return;
 
     for (i = 0; i < *count && speciesArray[i] != species; i++)
         ;
