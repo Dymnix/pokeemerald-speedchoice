@@ -30,7 +30,7 @@ To set up the repository, see [INSTALL.md](INSTALL.md).
 * The Pokedex and National Dex will be obtained progressively from Regional Dex to National Dex, regardless of which you find first. 
 * The SSTidal will be available as soon as you have access to Slateport and have the SSTicket in your inventory. This allows early access to Lilycove. 
 * Additionally, the Frontier Pass will be repurposed to allow access to the Battle Frontier when paired with the SSTicket.
-* Steven's Room in Meteor Falls will be modified to open when talking to Scott at his house in the Battle Frontier after beating Champion, obtaining all 7 silver symbols, or obtaining 14 gold symbols. To be used with the Race End modifier in the Item Randomizer. 
+* Steven's Room in Meteor Falls will be modified to open when talking to Scott at his house in the Battle Frontier after beating Champion, obtaining all 7 silver symbols, or obtaining 7 gold symbols. To be used with the Race End modifier in the Item Randomizer. 
 * Removing the group of Wailmer blocking Route 124 and the old man blocking Cave of Origin from the start. 
 * Rayquaza event in Sootopolis will be skipped, and Rayquaza will be available as soon as you talk to Wallace in Cave of Origin.
 * Sootopolis Gym will always be open.
