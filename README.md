@@ -2,7 +2,7 @@
 
 This is a version of the Pokemon Emerald Speedchoice by Revo (https://github.com/ProjectRevoTPP/pokeemerald-speedchoice) that will be compatible with the Pokemon Emerald Full Item Randomizer once finished.
 
-This project is currently active and ongoing as of 10/21/2021. 
+This project is currently active and ongoing as of 12/17/2021. 
 
 It builds the following ROM:
 
@@ -12,8 +12,8 @@ To set up the repository, see [INSTALL.md](INSTALL.md).
 
 ## Changelog
 
-* Creating a mach bike path on Route 103 to allow travel across the water without Surf. 
-* Creating an acro bike path on Route 115 to allow early access to Meteor Falls. 
+* Creating a mach bike path on Route 103 to allow travel across the water without Surf. To be used with Early Mach Path modifier in the Item Randomizer.
+* Creating an acro bike path on Route 115 to allow early access to Meteor Falls. To be used with Early Acro Path modifier in the Item Randomizer.
 * Removing the "Start with Bike" and "Super Bike" features, as those would defeat the purpose of the item rando.
 * Shifting the locations of the Kecleon on Route 120 in order to require the Devon Scope item (not just talking to Steven) in order to pass between the two halves of the route.
 * Each Frontier Brain can be fought immediately (Factory, Pike), after one additional fight (Palace, Arena, Tower), or at the end of one run through of the facility (Dome). 
@@ -30,13 +30,12 @@ To set up the repository, see [INSTALL.md](INSTALL.md).
 * The Pokedex and National Dex will be obtained progressively from Regional Dex to National Dex, regardless of which you find first. 
 * The SSTidal will be available as soon as you have access to Slateport and have the SSTicket in your inventory. This allows early access to Lilycove. 
 * Additionally, the Frontier Pass will be repurposed to allow access to the Battle Frontier when paired with the SSTicket.
-* Steven's Room in Meteor Falls will now only open when talking to Scott at his house in the Battle Frontier after obtaining all 7 silver symbols (Key Item Rando) or 14 gold symbols (Full Item Rando).
+* Steven's Room in Meteor Falls will be modified to open when talking to Scott at his house in the Battle Frontier after beating Champion, obtaining all 7 silver symbols, or obtaining 14 gold symbols. To be used with the Race End modifier in the Item Randomizer. 
 * Removing the group of Wailmer blocking Route 124 and the old man blocking Cave of Origin from the start. 
 * Rayquaza event in Sootopolis will be skipped, and Rayquaza will be available as soon as you talk to Wallace in Cave of Origin.
 * Sootopolis Gym will always be open.
 * Magma Emblem will not only unlock the Magma Hideout in Jagged Pass, but it will also remove the guards blocking the Aqua Hideout and Seafloor Hideout. 
-* Releasing Groudon or Kyogre from Magma Hideout/Seafloor Hideout will cause the post-game event to catch the respective legendary to be available instead of them going to Sootopolis for the event. 
-* Briney will only let you take his boat if you have obtained the Devon Goods AND the Letter. However, talking to Steven will not be required to take the boat from Dewford to Slateport. 
+* Releasing Groudon or Kyogre from Magma Hideout/Seafloor Hideout, plus having their respective orb (Red or Blue), will cause the post-game event to catch the respective legendary to be available instead of them going to Sootopolis for the event. 
 * You will not be able to hand Steven the letter for his item unless the Letter is in your inventory.
 * Dock in Slateport will not acknowledge the Devon Goods unless you have them in your inventory, making them required to access the Slateport Museum, as well as Route 110 without a bike.  
 * Add berry trees to pool??????????????
