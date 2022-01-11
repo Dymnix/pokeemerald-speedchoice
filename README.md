@@ -26,7 +26,7 @@ To set up the repository, see [INSTALL.md](INSTALL.md).
 
 ## Planned Changes/Features
 
-# High Priority:
+### High Priority:
 
 * Reworking items given by NPCs to be compatible with the new item scripts.
 * Steven's Room in Meteor Falls will be modified to open when talking to Scott at his house in the Battle Frontier after beating Champion, obtaining all 7 silver symbols, or obtaining 7 gold symbols. To be used with the Race End modifier in the Item Randomizer. 
@@ -40,7 +40,7 @@ To set up the repository, see [INSTALL.md](INSTALL.md).
 * Battle Frontier facilities will have one check each for defeating the brain. No progress items will be placed beyond the first brain fights. 
 * New "vanilla" locations for event items.
 
-# Low(er) Priority:
+### Low(er) Priority:
 
 * New preset on the speedchoice menu to quickly set the options for item rando.
 * Releasing Groudon or Kyogre from Magma Hideout/Seafloor Hideout, plus having their respective orb (Red or Blue), will cause the post-game event to catch the respective legendary to be available instead of them going to Sootopolis for the event. 
