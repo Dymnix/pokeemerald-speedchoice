@@ -19,12 +19,12 @@ To set up the repository, see [INSTALL.md](INSTALL.md).
 * Each Frontier Brain can be fought immediately (Factory, Pike), after one additional fight (Palace, Arena, Tower), or at the end of one run through of the facility (Dome). 
 * The Battle Pyramid Brain can be fought after completing one floor of the pyramid.
 * Level/Mon restrictions for Frontier are removed. 
+* Created event scripts for every obtainable item, badge, frontier symbol. This also includes the Pokedex, National Dex, PokeNav, Running Shoes, Frontier Pass.
+* Converted all item ball scripts to allow obtaining badges, frontier symbols, and other non-standard items.
 
 ## Planned Changes/Features
 
 * New preset on the speedchoice menu to quickly set the options for item rando.
-* Creating event scripts for every obtainable item, badge, frontier symbol. This also includes the Pokedex, National Dex, PokeNav, Running Shoes, Frontier Pass, and any other non-standard items that I am missing. This will greatly ease the randomization process.
-* Converting all item ball scripts to allow obtaining badges, frontier symbols, and other non-standard items.
 * Changing how hidden items are handled in order to allow for the above change as well. 
 * Frontier Symbols will be obtained progressively from Silver to Gold, regardless of which you find first.
 * The Pokedex and National Dex will be obtained progressively from Regional Dex to National Dex, regardless of which you find first. 
