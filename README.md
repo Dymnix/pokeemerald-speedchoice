@@ -21,26 +21,32 @@ To set up the repository, see [INSTALL.md](INSTALL.md).
 * Level/Mon restrictions for Frontier are removed. 
 * Created event scripts for every obtainable item, badge, frontier symbol. This also includes the Pokedex, National Dex, PokeNav, Running Shoes, Frontier Pass.
 * Converted all item ball scripts to allow obtaining badges, frontier symbols, and other non-standard items.
+* The Pokedex and National Dex will be obtained progressively from Regional Dex to National Dex, regardless of which you find first.
+* The SSTidal will be available as soon as you have access to Slateport and have the SSTicket in your inventory. This allows early access to Lilycove.
 
 ## Planned Changes/Features
 
-* New preset on the speedchoice menu to quickly set the options for item rando.
-* Changing how hidden items are handled in order to allow for the above change as well. 
-* Frontier Symbols will be obtained progressively from Silver to Gold, regardless of which you find first.
-* The Pokedex and National Dex will be obtained progressively from Regional Dex to National Dex, regardless of which you find first. 
-* The SSTidal will be available as soon as you have access to Slateport and have the SSTicket in your inventory. This allows early access to Lilycove. 
-* Additionally, the Frontier Pass will be repurposed to allow access to the Battle Frontier when paired with the SSTicket.
+# High Priority:
+
+* Reworking items given by NPCs to be compatible with the new item scripts.
 * Steven's Room in Meteor Falls will be modified to open when talking to Scott at his house in the Battle Frontier after beating Champion, obtaining all 7 silver symbols, or obtaining 7 gold symbols. To be used with the Race End modifier in the Item Randomizer. 
+* The Frontier Pass will be repurposed to allow access to the Battle Frontier when paired with the SSTicket.
 * Removing the group of Wailmer blocking Route 124 and the old man blocking Cave of Origin from the start. 
 * Rayquaza event in Sootopolis will be skipped, and Rayquaza will be available as soon as you talk to Wallace in Cave of Origin.
 * Sootopolis Gym will always be open.
 * Magma Emblem will not only unlock the Magma Hideout in Jagged Pass, but it will also remove the guards blocking the Aqua Hideout and Seafloor Hideout. 
-* Releasing Groudon or Kyogre from Magma Hideout/Seafloor Hideout, plus having their respective orb (Red or Blue), will cause the post-game event to catch the respective legendary to be available instead of them going to Sootopolis for the event. 
 * You will not be able to hand Steven the letter for his item unless the Letter is in your inventory.
 * Dock in Slateport will not acknowledge the Devon Goods unless you have them in your inventory, making them required to access the Slateport Museum, as well as Route 110 without a bike.  
-* Add berry trees to pool??????????????
 * Battle Frontier facilities will have one check each for defeating the brain. No progress items will be placed beyond the first brain fights. 
-* Other possible changes as I think of them. 
+* New "vanilla" locations for event items.
+
+# Low(er) Priority:
+
+* New preset on the speedchoice menu to quickly set the options for item rando.
+* Releasing Groudon or Kyogre from Magma Hideout/Seafloor Hideout, plus having their respective orb (Red or Blue), will cause the post-game event to catch the respective legendary to be available instead of them going to Sootopolis for the event. 
+* Changing how hidden items are handled in order to allow for badges, etc. 
+* Add berry trees to pool??????????????
+
 
 ## See also
 
