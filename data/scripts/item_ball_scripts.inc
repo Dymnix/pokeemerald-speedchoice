@@ -1335,11 +1335,11 @@ GetItem_Great_Ball::
 GetItem_Poke_Ball::
 	giveitem ITEM_POKE_BALL
 	return
-	
+
 GetItem_5_Poke_Balls::
 	giveitem ITEM_POKE_BALL, 5
 	return
-	
+
 GetItem_Safari_Ball::
 	giveitem ITEM_SAFARI_BALL
 	return
@@ -2154,7 +2154,7 @@ giveitem_Good_Rod::
 	giveitem ITEM_GOOD_ROD
 	return
 
-GetItem_SS_TICKET::
+GetItem_SS_Ticket::
 	giveitem ITEM_SS_TICKET
 	setflag FLAG_RECEIVED_SS_TICKET
 	return
@@ -2618,7 +2618,7 @@ EventScript_Give_National_Dex::
 	special EnableNationalPokedex
 	return
 
-GetItem_RunningShoes::
+GetItem_Running_Shoes::
 	playfanfare MUS_OBTAIN_ITEM
 	message LittlerootTown_Text_SwitchShoesWithRunningShoes
 	waitfanfare
@@ -2766,3 +2766,29 @@ GetItem_Brave_Gold::
 	waitfanfare
 	frontier_givesymbol
 	return
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
