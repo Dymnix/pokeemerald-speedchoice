@@ -13,7 +13,8 @@ SlateportCity_Harbor_OnTransition: @ 820C983
 	setvar VAR_TEMP_1, 0
 	compare VAR_SLATEPORT_HARBOR_STATE, 1
 	call_if_eq SlateportCity_Harbor_EventScript_ReadyAquaEscapeScene
-	call_if_set FLAG_SYS_GAME_CLEAR, SlateportCity_Harbor_EventScript_ShowSSTidal
+	@call_if_set FLAG_SYS_GAME_CLEAR, SlateportCity_Harbor_EventScript_ShowSSTidal
+	clearflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_SS_TIDAL
 	end
 
 SlateportCity_Harbor_EventScript_ShowSSTidal:: @ 820C9A5
@@ -168,20 +169,24 @@ SlateportCity_Harbor_Movement_PlayerWalkUp: @ 820CAEF
 SlateportCity_Harbor_EventScript_FerryAttendant:: @ 820CAF1
 	lock
 	faceplayer
-	goto_if_set FLAG_SYS_GAME_CLEAR, SlateportCity_Harbor_EventScript_AskForTicket
-	msgbox SlateportCity_Harbor_Text_FerryServiceUnavailable, MSGBOX_DEFAULT
+	@goto_if_set FLAG_SYS_GAME_CLEAR, SlateportCity_Harbor_EventScript_AskForTicket
+	goto SlateportCity_Harbor_EventScript_AskForTicket
+	@msgbox SlateportCity_Harbor_Text_FerryServiceUnavailable, MSGBOX_DEFAULT
 	release
 	end
 
 SlateportCity_Harbor_EventScript_AskForTicket:: @ 820CB06
 	msgbox SlateportCity_Harbor_Text_MayISeeYourTicket, MSGBOX_DEFAULT
+	checkitem ITEM_SS_TICKET, 1
+	compare VAR_RESULT, FALSE
+	goto_if_eq SlateportCity_Harbor_EventScript_NoTicket
 	message SlateportCity_Harbor_Text_FlashedTicketWhereTo
 	waitmessage
 	goto SlateportCity_Harbor_EventScript_ChooseDestination
 	end
 
 SlateportCity_Harbor_EventScript_ChooseDestination:: @ 820CB1A
-	goto_if_set FLAG_MET_SCOTT_ON_SS_TIDAL, SlateportCity_Harbor_EventScript_ChooseDestinationWithBattleFrontier
+	goto_if_set FLAG_SYS_FRONTIER_PASS, SlateportCity_Harbor_EventScript_ChooseDestinationWithBattleFrontier
 	multichoicedefault 18, 8, MULTI_SSTIDAL_SLATEPORT_NO_BF, 2, 0
 	switch VAR_RESULT
 	case 0, SlateportCity_Harbor_EventScript_Lilycove
@@ -364,7 +369,7 @@ SlateportCity_Harbor_EventScript_DeepSeaTooth:: @ 820CD7B
 	msgbox SlateportCity_Harbor_Text_TradeForDeepSeaTooth, MSGBOX_YESNO
 	compare VAR_RESULT, NO
 	goto_if_eq SlateportCity_Harbor_EventScript_ChooseDifferentTrade
-	giveitem ITEM_DEEP_SEA_TOOTH
+	goto SlateportCity_Harbor_EventScript_GiveDeep
 	compare VAR_RESULT, FALSE
 	goto_if_eq Common_EventScript_ShowBagIsFull
 	removeitem ITEM_SCANNER
@@ -377,7 +382,7 @@ SlateportCity_Harbor_EventScript_DeepSeaScale:: @ 820CDBB
 	msgbox SlateportCity_Harbor_Text_TradeForDeepSeaScale, MSGBOX_YESNO
 	compare VAR_RESULT, NO
 	goto_if_eq SlateportCity_Harbor_EventScript_ChooseDifferentTrade
-	giveitem ITEM_DEEP_SEA_SCALE
+	goto SlateportCity_Harbor_EventScript_GiveDeep
 	compare VAR_RESULT, FALSE
 	goto_if_eq Common_EventScript_ShowBagIsFull
 	removeitem ITEM_SCANNER
@@ -385,6 +390,11 @@ SlateportCity_Harbor_EventScript_DeepSeaScale:: @ 820CDBB
 	setflag FLAG_EXCHANGED_SCANNER
 	goto SlateportCity_Harbor_EventScript_TradedScanner
 	end
+
+SlateportCity_Harbor_EventScript_GiveDeep::
+	call GetItem_Deep_Sea_Tooth
+	call GetItem_Deep_Sea_Scale
+	return
 
 SlateportCity_Harbor_EventScript_DeclineTrade:: @ 820CDFB
 	msgbox SlateportCity_Harbor_Text_IfYouWantToTradeLetMeKnow, MSGBOX_DEFAULT
