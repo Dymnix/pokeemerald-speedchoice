@@ -128,7 +128,6 @@ static const struct BikeHistoryInputInfo sAcroBikeTricksList[] =
 // SPEEDCHOICE CHANGE
 // -----------------------------------------
 // Change: Super Bike used to be set here, but is default now.
-// FIR Change: Removed Super Bike
 void MovePlayerOnBike(u8 direction, u16 newKeys, u16 heldKeys)
 {
 //    if(gMain.newKeys & R_BUTTON)
@@ -136,9 +135,9 @@ void MovePlayerOnBike(u8 direction, u16 newKeys, u16 heldKeys)
 //        PlaySE(SE_BIKE_BELL);
 //        if(gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_ACRO_BIKE)
 //            SetPlayerAvatarTransitionFlags(PLAYER_AVATAR_FLAG_MACH_BIKE);
-//       else
+//        else
 //            SetPlayerAvatarTransitionFlags(PLAYER_AVATAR_FLAG_ACRO_BIKE);
-    }
+//    }
 
     if (gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_MACH_BIKE)
         MovePlayerOnMachBike(direction, newKeys, heldKeys);
