@@ -23,6 +23,7 @@ To set up the repository, see [INSTALL.md](INSTALL.md).
 * Converted all item ball scripts to allow obtaining badges, frontier symbols, and other non-standard items.
 * The Pokedex and National Dex will be obtained progressively from Regional Dex to National Dex, regardless of which you find first.
 * The SSTidal will be available as soon as you have access to Slateport and have the SSTicket in your inventory. This allows early access to Lilycove.
+* New speedchoice menu preset for Item Rando, set as default.
 
 ## Planned Changes/Features
 
@@ -42,7 +43,6 @@ To set up the repository, see [INSTALL.md](INSTALL.md).
 
 ### Low(er) Priority:
 
-* New preset on the speedchoice menu to quickly set the options for item rando.
 * Releasing Groudon or Kyogre from Magma Hideout/Seafloor Hideout, plus having their respective orb (Red or Blue), will cause the post-game event to catch the respective legendary to be available instead of them going to Sootopolis for the event. 
 * Changing how hidden items are handled in order to allow for badges, etc. 
 * Add berry trees to pool??????????????
