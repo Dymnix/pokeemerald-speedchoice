@@ -208,12 +208,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_UpgradeToNationalDex:: @ 81F9E80
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFastestUp
 	waitmovement 0
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_OkayAllDone, MSGBOX_DEFAULT
-	playfanfare MUS_OBTAIN_ITEM
-	message LittlerootTown_ProfessorBirchsLab_Text_PokedexUpgradedToNational
-	waitmessage
-	waitfanfare
-	setflag FLAG_SYS_NATIONAL_DEX
-	special EnableNationalPokedex
+	call GetItem_National_Dex
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting2, MSGBOX_DEFAULT
 	closemessage
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCH
@@ -570,7 +565,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_GivePokedex:: @ 81FA2F8
 
 LittlerootTown_ProfessorBirchsLab_EventScript_MayGivePokeBalls:: @ 81FA352
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_MayGotPokedexTooTakeThese, MSGBOX_DEFAULT
-	giveitem ITEM_POKE_BALL, 5
+	call LittlerootTown_ProfessorBirchsLab_EventScript_GivePokeBalls
 	compare VAR_RESULT, FALSE
 	call_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_MayNoRoomForPokeBalls
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_CatchCutePokemonWithPokeBalls, MSGBOX_DEFAULT
@@ -579,19 +574,19 @@ LittlerootTown_ProfessorBirchsLab_EventScript_MayGivePokeBalls:: @ 81FA352
 
 LittlerootTown_ProfessorBirchsLab_EventScript_BrendanGivePokeBalls:: @ 81FA37F
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_BrendanGotPokedexTooTakeThese, MSGBOX_DEFAULT
-	giveitem ITEM_POKE_BALL, 5
+	call LittlerootTown_ProfessorBirchsLab_EventScript_GivePokeBalls
 	compare VAR_RESULT, FALSE
 	call_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_BrendanNoRoomForPokeBalls
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_CatchCoolPokemonWithPokeBalls, MSGBOX_DEFAULT
 	setvar VAR_RESULT, 1
 	return
 
+LittlerootTown_ProfessorBirchsLab_EventScript_GivePokeBalls::
+	call GetItem_5_Poke_Balls
+	return
+
 LittlerootTown_ProfessorBirchsLab_EventScript_ReceivePokedex:: @ 81FA3AC
-	playfanfare MUS_OBTAIN_ITEM
-	message LittlerootTown_ProfessorBirchsLab_Text_ReceivedPokedex
-	waitfanfare
-	setflag FLAG_SYS_POKEDEX_GET
-	special SetUnlockedPokedexFlags
+	call GetItem_Pokedex
 	setflag FLAG_RECEIVED_POKEDEX_FROM_BIRCH
 	setvar VAR_CABLE_CLUB_TUTORIAL_STATE, 1
 	return
