@@ -95,7 +95,7 @@ DewfordTown_EventScript_OldRodFisherman:: @ 81E95D5
 
 DewfordTown_EventScript_GiveOldRod:: @ 81E95FF
 	msgbox DewfordTown_Text_GiveYouOneOfMyRods, MSGBOX_DEFAULT
-	giveitem ITEM_OLD_ROD
+	call GetItem_Old_Rod
 	setflag FLAG_RECEIVED_OLD_ROD
 	msgbox DewfordTown_Text_ThrowInFishingAdvice, MSGBOX_DEFAULT
 	release
