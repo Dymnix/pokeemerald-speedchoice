@@ -1335,7 +1335,11 @@ GetItem_Great_Ball::
 GetItem_Poke_Ball::
 	giveitem ITEM_POKE_BALL
 	return
-
+	
+GetItem_5_Poke_Balls::
+	giveitem ITEM_POKE_BALL, 5
+	return
+	
 GetItem_Safari_Ball::
 	giveitem ITEM_SAFARI_BALL
 	return
