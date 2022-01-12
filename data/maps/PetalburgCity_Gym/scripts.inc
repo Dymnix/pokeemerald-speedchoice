@@ -433,17 +433,14 @@ PetalburgCity_Gym_EventScript_NormanBattle:: @ 8204E3B
 	clearflag FLAG_HIDE_WEATHER_INSTITUTE_1F_WORKERS
 	setflag FLAG_HIDE_WEATHER_INSTITUTE_2F_WORKERS
 AfterNorman::
-	message PetalburgCity_Gym_Text_ReceivedBalanceBadge
-	waitmessage
-	call Common_EventScript_PlayGymBadgeFanfare
+	call GetItem_Balance_Badge
 	msgbox PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis, MSGBOX_DEFAULT
 	setflag FLAG_DEFEATED_PETALBURG_GYM
 	setvar VAR_PETALBURG_GYM_STATE, 7
-	setflag FLAG_BADGE05_GET
     clearflag FLAG_HIDE_ROUTE_120_STEVEN @ SPEEDCHOICE (Steven object after Fortree)
-	special ResetHealLocationFromDewford
-	call EventScript_HideMrBriney
-	setflag FLAG_HIDE_MAUVILLE_GYM_WATTSON
+	@special ResetHealLocationFromDewford 
+	@call EventScript_HideMrBriney // Could Softlock
+	@setflag FLAG_HIDE_MAUVILLE_GYM_WATTSON // Could Softlock
 	clearflag FLAG_HIDE_MAUVILLE_CITY_WATTSON
 	setvar VAR_0x8008, 5
 	call Common_EventScript_SetGymTrainers
@@ -465,7 +462,7 @@ AfterNorman::
 	end
 
 PetalburgCity_Gym_EventScript_GiveFacade:: @ 8204ED2
-	giveitem ITEM_TM42
+	call GetItem_TM42
 	compare VAR_RESULT, FALSE
 	goto_if_eq Common_EventScript_BagIsFull
 	setflag FLAG_RECEIVED_TM42
