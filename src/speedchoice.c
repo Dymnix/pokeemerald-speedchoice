@@ -219,7 +219,7 @@ const u8 gSpeedchoiceEscapeText[] = _("ESCAPE");
 /* ---- PRESETS ---- */
 /* ----------------- */
 const u8 gPresetNames[][20] = {
-    _("{COLOR GREEN}{SHADOW LIGHT_GREEN}VANILLA"),
+    _("{COLOR GREEN}{SHADOW LIGHT_GREEN}ITEM RAND"),
     _("{COLOR GREEN}{SHADOW LIGHT_GREEN}BINGO"),
     _("{COLOR GREEN}{SHADOW LIGHT_GREEN}CEA"),
     _("{COLOR GREEN}{SHADOW LIGHT_GREEN}RACE"),
@@ -249,17 +249,17 @@ static EWRAM_DATA int gSpeedchoiceTaskId = 0;
 static const u8 gPresetVanilla[CURRENT_OPTIONS_NUM] = {
     PRESET_VANILLA,         // PRESET
     0xFF,                   // (Reserved for trainer name)
-    EXP_KEEP,               // EXP
+    EXP_BW,                 // EXP
     PLOT_KEEP,              // PLOTLESS
-    SPIN_KEEP,              // SPINNERS
+    SPIN_NERF,              // SPINNERS
     MAX_OFF,                // MAXVISION
     FLY_NO,                 // EARLYFLY
-    GOOD_OFF,               // GOOD_EARLY_WILDS
+    GOOD_STATIC,                // GOOD_EARLY_WILDS
     SURF_OFF,               // EARLYSURF
-    NICE_MENU_ORDER_OFF,    // NICE_MENU_ORDER
+    NICE_MENU_ORDER_ON,     // NICE_MENU_ORDER
     EASY_FALSE_SWIPE_OFF,   // EASY_FALSE_SWIPE
     FAST_CATCH_OFF,         // FAST_CATCH
-    EARLY_BIKE_NO,          // EARLY_BIKE
+    GEN_7_X_ITEMS_ON,       // GEN_7_X_ITEMS
     EVO_EV_OFF              // EVO_EVERY_LEVEL
 };
 
