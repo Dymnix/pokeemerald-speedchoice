@@ -203,7 +203,7 @@ SlateportCity_BattleTentLobby_EventScript_TormentGiver:: @ 8208A3D
 	faceplayer
 	goto_if_set FLAG_RECEIVED_TM41, SlateportCity_BattleTentLobby_EventScript_ReceivedTorment
 	msgbox SlateportCity_BattleTentLobby_Text_CouldntFindMonForMe, MSGBOX_DEFAULT
-	giveitem ITEM_TM41
+	call GetItem_TM41
 	compare VAR_RESULT, FALSE
 	goto_if_eq Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_TM41
