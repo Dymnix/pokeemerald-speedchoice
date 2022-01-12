@@ -72,56 +72,56 @@ SlateportCity_PokemonFanClub_EventScript_NoHighConditions:: @ 8209FD6
 	end
 
 SlateportCity_PokemonFanClub_EventScript_GiveRedScarf:: @ 8209FE0
-	checkitemspace ITEM_RED_SCARF, 1
-	compare VAR_RESULT, FALSE
-	goto_if_eq SlateportCity_PokemonFanClub_EventScript_NoRoomForScarf
+	@checkitemspace ITEM_RED_SCARF, 1
+	@compare VAR_RESULT, FALSE
+	@goto_if_eq SlateportCity_PokemonFanClub_EventScript_NoRoomForScarf
 	msgbox SlateportCity_PokemonFanClub_Text_MonMostImpressiveGiveItThis, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_RED_SCARF
-	giveitem ITEM_RED_SCARF
+	call GetItem_Red_Scarf
 	msgbox SlateportCity_PokemonFanClub_Text_ExplainRedScarf, MSGBOX_DEFAULT
 	release
 	end
 
 SlateportCity_PokemonFanClub_EventScript_GiveBlueScarf:: @ 820A011
-	checkitemspace ITEM_BLUE_SCARF, 1
-	compare VAR_RESULT, FALSE
-	goto_if_eq SlateportCity_PokemonFanClub_EventScript_NoRoomForScarf
+	@checkitemspace ITEM_BLUE_SCARF, 1
+	@compare VAR_RESULT, FALSE
+	@goto_if_eq SlateportCity_PokemonFanClub_EventScript_NoRoomForScarf
 	msgbox SlateportCity_PokemonFanClub_Text_MonMostImpressiveGiveItThis, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_BLUE_SCARF
-	giveitem ITEM_BLUE_SCARF
+	call GetItem_Blue_Scarf
 	msgbox SlateportCity_PokemonFanClub_Text_ExplainBlueScarf, MSGBOX_DEFAULT
 	release
 	end
 
 SlateportCity_PokemonFanClub_EventScript_GivePinkScarf:: @ 820A042
-	checkitemspace ITEM_PINK_SCARF, 1
-	compare VAR_RESULT, FALSE
-	goto_if_eq SlateportCity_PokemonFanClub_EventScript_NoRoomForScarf
+	@checkitemspace ITEM_PINK_SCARF, 1
+	@compare VAR_RESULT, FALSE
+	@goto_if_eq SlateportCity_PokemonFanClub_EventScript_NoRoomForScarf
 	msgbox SlateportCity_PokemonFanClub_Text_MonMostImpressiveGiveItThis, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_PINK_SCARF
-	giveitem ITEM_PINK_SCARF
+	call GetItem_Pink_Scarf
 	msgbox SlateportCity_PokemonFanClub_Text_ExplainPinkScarf, MSGBOX_DEFAULT
 	release
 	end
 
 SlateportCity_PokemonFanClub_EventScript_GiveGreenScarf:: @ 820A073
-	checkitemspace ITEM_GREEN_SCARF, 1
-	compare VAR_RESULT, FALSE
-	goto_if_eq SlateportCity_PokemonFanClub_EventScript_NoRoomForScarf
+	@checkitemspace ITEM_GREEN_SCARF, 1
+	@compare VAR_RESULT, FALSE
+	@goto_if_eq SlateportCity_PokemonFanClub_EventScript_NoRoomForScarf
 	msgbox SlateportCity_PokemonFanClub_Text_MonMostImpressiveGiveItThis, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_GREEN_SCARF
-	giveitem ITEM_GREEN_SCARF
+	call GetItem_Green_Scarf
 	msgbox SlateportCity_PokemonFanClub_Text_ExplainGreenScarf, MSGBOX_DEFAULT
 	release
 	end
 
 SlateportCity_PokemonFanClub_EventScript_GiveYellowScarf:: @ 820A0A4
-	checkitemspace ITEM_YELLOW_SCARF, 1
-	compare VAR_RESULT, FALSE
-	goto_if_eq SlateportCity_PokemonFanClub_EventScript_NoRoomForScarf
+	@checkitemspace ITEM_YELLOW_SCARF, 1
+	@compare VAR_RESULT, FALSE
+	@goto_if_eq SlateportCity_PokemonFanClub_EventScript_NoRoomForScarf
 	msgbox SlateportCity_PokemonFanClub_Text_MonMostImpressiveGiveItThis, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_YELLOW_SCARF
-	giveitem ITEM_YELLOW_SCARF
+	call GetItem_Yellow_Scarf
 	msgbox SlateportCity_PokemonFanClub_Text_ExplainYellowScarf, MSGBOX_DEFAULT
 	release
 	end
@@ -216,7 +216,7 @@ SlateportCity_PokemonFanClub_EventScript_GiveSootheBell:: @ 820A1A3
 	applymovement VAR_LAST_TALKED, Common_Movement_Delay48
 	waitmovement 0
 	msgbox SlateportCity_PokemonFanClub_Text_PokemonAdoresYou, MSGBOX_DEFAULT
-	giveitem ITEM_SOOTHE_BELL
+	call GetItem_Soothe_Bell
 	compare VAR_RESULT, FALSE
 	goto_if_eq Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_SOOTHE_BELL
