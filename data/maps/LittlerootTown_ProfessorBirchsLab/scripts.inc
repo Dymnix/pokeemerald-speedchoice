@@ -588,6 +588,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_GivePokeBalls::
 LittlerootTown_ProfessorBirchsLab_EventScript_ReceivePokedex:: @ 81FA3AC
 	call GetItem_Pokedex
 	setflag FLAG_RECEIVED_POKEDEX_FROM_BIRCH
+	clearflag FLAG_HIDE_SOOTOPOLIS_CITY_WALLACE
 	setvar VAR_CABLE_CLUB_TUTORIAL_STATE, 1
 	return
 
