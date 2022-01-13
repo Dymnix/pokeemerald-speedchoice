@@ -20,18 +20,15 @@ FortreeCity_Gym_EventScript_Winona:: @ 82165C8
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	compare VAR_RESULT, TRUE
 	goto_if_eq FortreeCity_Gym_EventScript_WinonaRematch
-	goto_if_unset FLAG_RECEIVED_TM40, FortreeCity_Gym_EventScript_GiveAerialAce2
+	goto_if_unset FLAG_RECEIVED_TM40, FortreeCity_Gym_EventScript_GiveAerialAce
 	msgbox FortreeCity_Gym_Text_WinonaPostBattle, MSGBOX_DEFAULT
 	release
 	end
 
 FortreeCity_Gym_EventScript_WinonaDefeated:: @ 82165FD
-	message FortreeCity_Gym_Text_ReceivedFeatherBadge
-	waitmessage
-	call Common_EventScript_PlayGymBadgeFanfare
+	call GetItem_Feather_Badge
 	msgbox FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis, MSGBOX_DEFAULT
 	setflag FLAG_DEFEATED_FORTREE_GYM
-	setflag FLAG_BADGE06_GET
 	setvar VAR_0x8008, 6
 	call Common_EventScript_SetGymTrainers
 	call FortreeCity_Gym_EventScript_GiveAerialAce
@@ -59,7 +56,7 @@ gTMText_11::
 	end
 
 FortreeCity_Gym_EventScript_GiveAerialAce:: @ 821666A
-	giveitem ITEM_TM40
+	call GetItem_TM40
 	compare VAR_RESULT, FALSE
 	goto_if_eq Common_EventScript_BagIsFull
 	msgbox FortreeCity_Gym_Text_ExplainAerialAce, MSGBOX_DEFAULT
