@@ -53,18 +53,15 @@ MossdeepCity_Gym_EventScript_TateAndLiza:: @ 8220898
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	compare VAR_RESULT, TRUE
 	goto_if_eq MossdeepCity_Gym_EventScript_TateAndLizaRematch
-	goto_if_unset FLAG_RECEIVED_TM04, MossdeepCity_Gym_EventScript_GiveCalmMind2
+	goto_if_unset FLAG_RECEIVED_TM04, MossdeepCity_Gym_EventScript_GiveCalmMind
 	msgbox MossdeepCity_Gym_Text_TateAndLizaPostBattle, MSGBOX_DEFAULT
 	release
 	end
 
 MossdeepCity_Gym_EventScript_TateAndLizaDefeated:: @ 82208D1
-	message MossdeepCity_Gym_Text_ReceivedMindBadge
-	waitmessage
-	call Common_EventScript_PlayGymBadgeFanfare
+	call GetItem_Mind_Badge
 	msgbox MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis, MSGBOX_DEFAULT
 	setflag FLAG_DEFEATED_MOSSDEEP_GYM
-	setflag FLAG_BADGE07_GET
 	setflag FLAG_HIDE_AQUA_HIDEOUT_GRUNTS
 	clearflag FLAG_HIDE_SLATEPORT_CITY_STERNS_SHIPYARD_MR_BRINEY
 	clearflag FLAG_UNKNOWN_0x393
@@ -104,7 +101,7 @@ gTMText_2::
 	end
 
 MossdeepCity_Gym_EventScript_GiveCalmMind:: @ 822095B
-	giveitem ITEM_TM04
+	call GetItem_TM04
 	compare VAR_RESULT, FALSE
 	goto_if_eq Common_EventScript_BagIsFull
 	msgbox MossdeepCity_Gym_Text_ExplainCalmMind, MSGBOX_DEFAULT
