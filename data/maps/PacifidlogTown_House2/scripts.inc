@@ -12,7 +12,7 @@ PacifidlogTown_House2_EventScript_FanClubYoungerBrother:: @ 8203792
 	setflag FLAG_MET_FANCLUB_YOUNGER_BROTHER
 	specialvar VAR_RESULT, GetLeadMonFriendshipScore
 	compare VAR_RESULT, 4
-	goto_if_ge PacifidlogTown_House2_EventScript_GiveReturn
+	goto PacifidlogTown_House2_EventScript_GiveReturn
 	specialvar VAR_RESULT, GetLeadMonFriendshipScore
 	compare VAR_RESULT, 2
 	goto_if_ge PacifidlogTown_House2_EventScript_PutInEffort
@@ -41,7 +41,7 @@ PacifidlogTown_House2_EventScript_ClearReceivedFanClubTM:: @ 8203812
 
 PacifidlogTown_House2_EventScript_GiveReturn:: @ 8203816
 	msgbox PacifidlogTown_House2_Text_AdoringPokemonTakeThis, MSGBOX_DEFAULT
-	giveitem ITEM_TM27
+	goto GiveThoseTMS
 	compare VAR_RESULT, FALSE
 	goto_if_eq Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_FANCLUB_TM_THIS_WEEK
@@ -57,7 +57,7 @@ PacifidlogTown_House2_EventScript_PutInEffort:: @ 8203845
 
 PacifidlogTown_House2_EventScript_GiveFrustration:: @ 820384F
 	msgbox PacifidlogTown_House2_Text_ViciousPokemonTakeThis, MSGBOX_DEFAULT
-	giveitem ITEM_TM21
+	goto GiveThoseTMS
 	compare VAR_RESULT, FALSE
 	goto_if_eq Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_FANCLUB_TM_THIS_WEEK
@@ -65,6 +65,11 @@ PacifidlogTown_House2_EventScript_GiveFrustration:: @ 820384F
 	msgbox PacifidlogTown_House2_Text_ExplainReturnFrustration, MSGBOX_DEFAULT
 	release
 	end
+
+GiveThoseTMS::
+	call GetItem_TM27
+	call GetItem_TM21
+	return
 
 PacifidlogTown_House2_EventScript_ComeBackInXDays:: @ 820387E
 	specialvar VAR_RESULT, GetDaysUntilPacifidlogTMAvailable
