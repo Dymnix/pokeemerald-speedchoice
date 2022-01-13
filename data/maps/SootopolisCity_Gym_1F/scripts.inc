@@ -87,23 +87,20 @@ SootopolisCity_Gym_1F_EventScript_Juan:: @ 8224F44
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	compare VAR_RESULT, TRUE
 	goto_if_eq SootopolisCity_Gym_1F_EventScript_JuanRematch
-	goto_if_unset FLAG_RECEIVED_TM03, SootopolisCity_Gym_1F_EventScript_GiveWaterPulse2
+	goto_if_unset FLAG_RECEIVED_TM03, SootopolisCity_Gym_1F_EventScript_GiveWaterPulse
 	goto_if_unset FLAG_BADGE06_GET, SootopolisCity_Gym_1F_EventScript_GoGetFortreeBadge
 	msgbox SootopolisCity_Gym_1F_Text_JuanPostBattle, MSGBOX_DEFAULT
 	release
 	end
 
 SootopolisCity_Gym_1F_EventScript_JuanDefeated:: @ 8224F82
-    message SootopolisCity_Gym_1F_Text_ReceivedRainBadge
-    waitmessage
-    call Common_EventScript_PlayGymBadgeFanfare
+    call GetItem_Rain_Badge
     msgbox SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis, MSGBOX_DEFAULT
     setflag FLAG_DEFEATED_SOOTOPOLIS_GYM
-    setflag FLAG_BADGE08_GET
     setflag FLAG_HIDE_SOOTOPOLIS_CITY_RESIDENTS
     setflag FLAG_HIDE_SOOTOPOLIS_CITY_STEVEN
     setflag FLAG_HIDE_SOOTOPOLIS_CITY_WALLACE
-    setflag FLAG_HIDE_SOOTOPOLIS_CITY_OLD_MAN_EXPERT @ SPEEDCHOICE (Hide old man blocking Cave of Origin after Juan defeat.)
+    @setflag FLAG_HIDE_SOOTOPOLIS_CITY_OLD_MAN_EXPERT @ SPEEDCHOICE (Hide old man blocking Cave of Origin after Juan defeat.)
     setvar VAR_SOOTOPOLIS_CITY_STATE, 6
     clearflag FLAG_HIDE_SOOTOPOLIS_CITY_MAN_1
     setvar VAR_0x8008, 8
@@ -121,7 +118,7 @@ SootopolisCity_Gym_1F_EventScript_JuanDefeated:: @ 8224F82
     end
 
 SootopolisCity_Gym_1F_EventScript_GiveWaterPulse:: @ 8224FD4
-	giveitem ITEM_TM03
+	call GetItem_TM03
 	compare VAR_RESULT, FALSE
 	goto_if_eq Common_EventScript_BagIsFull
 gTMText_1::
