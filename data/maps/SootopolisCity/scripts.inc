@@ -773,7 +773,7 @@ SootopolisCity_EventScript_KiriGiveBerry:: @ 81E5F1B
 	random NUM_KIRI_BERRIES
 	addvar VAR_RESULT, NUM_KIRI_BERRIES_SKIPPED
 	addvar VAR_RESULT, FIRST_BERRY_INDEX
-	giveitem VAR_RESULT
+	call GetItem_Oran_Berry
 	compare VAR_RESULT, FALSE
 	goto_if_eq Common_EventScript_ShowBagIsFull
 	setflag FLAG_DAILY_SOOTOPOLIS_RECEIVED_BERRY
@@ -786,7 +786,7 @@ SootopolisCity_EventScript_KiriGiveBerry:: @ 81E5F1B
 	end
 
 SootopolisCity_EventScript_GiveFigyBerry:: @ 81E5F79
-	giveitem ITEM_FIGY_BERRY
+	goto GiveBerry2
 	compare VAR_RESULT, FALSE
 	goto_if_eq Common_EventScript_ShowBagIsFull
 	msgbox SootopolisCity_Text_WhatKindOfWishInYourName, MSGBOX_DEFAULT
@@ -794,12 +794,16 @@ SootopolisCity_EventScript_GiveFigyBerry:: @ 81E5F79
 	end
 
 SootopolisCity_EventScript_GiveIapapaBerry:: @ 81E5F9A
-	giveitem ITEM_IAPAPA_BERRY
+	goto GiveBerry2
 	compare VAR_RESULT, FALSE
 	goto_if_eq Common_EventScript_ShowBagIsFull
 	msgbox SootopolisCity_Text_WhatKindOfWishInYourName, MSGBOX_DEFAULT
 	release
 	end
+
+GiveBerry2::
+	call GetItem_Figy_Berry
+	return
 
 SootopolisCity_EventScript_KiriReceivedBerry:: @ 81E5FBB
 	msgbox SootopolisCity_Text_LikeSeasonBornIn, MSGBOX_YESNO
@@ -1374,7 +1378,7 @@ SootopolisCity_EventScript_Wallace:: @ 81E6446
 
 SootopolisCity_EventScript_GiveWaterfall:: @ 81E646F
 	msgbox SootopolisCity_Text_ThankYouForHelpAcceptThis, MSGBOX_DEFAULT
-	giveitem ITEM_HM07
+	call GetItem_HM07
 	setflag FLAG_RECEIVED_HM07
 	msgbox SootopolisCity_Text_ExplainWaterfallGoToGym, MSGBOX_DEFAULT
 	closemessage
