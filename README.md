@@ -2,7 +2,7 @@
 
 This is a version of the Pokemon Emerald Speedchoice by Revo (https://github.com/ProjectRevoTPP/pokeemerald-speedchoice) that will be compatible with the Pokemon Emerald Full Item Randomizer once finished.
 
-This project is currently active and ongoing as of 1/11/2022. 
+This project is currently active and ongoing as of 1/13/2022. 
 
 It builds the following ROM:
 
@@ -40,12 +40,12 @@ To set up the repository, see [INSTALL.md](INSTALL.md).
 * Dock in Slateport will not acknowledge the Devon Goods unless you have them in your inventory, making them required to access the Slateport Museum, as well as Route 110 without a bike.  
 * Battle Frontier facilities will have one check each for defeating the brain. No progress items will be placed beyond the first brain fights. 
 * New "vanilla" locations for event items.
+* Create new scripts for berry trees in order to allow compatibility with the rest of the item pool.
 
 ### Low(er) Priority:
 
 * Releasing Groudon or Kyogre from Magma Hideout/Seafloor Hideout, plus having their respective orb (Red or Blue), will cause the post-game event to catch the respective legendary to be available instead of them going to Sootopolis for the event. 
-* Changing how hidden items are handled in order to allow for badges, etc. 
-* Add berry trees to pool??????????????
+* Changing how hidden items are handled in order to allow for badges, etc. Or find a workaround.
 
 
 ## See also
