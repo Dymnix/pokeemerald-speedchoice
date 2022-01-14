@@ -9,10 +9,12 @@ ShoalCave_LowTideEntranceRoom_OnTransition: @ 8236DC0
 
 ShoalCave_LowTideEntranceRoom_EventScript_SetHighTide:: @ 8236DD1
 	setmaplayoutindex LAYOUT_SHOAL_CAVE_HIGH_TIDE_ENTRANCE_ROOM
+	clearflag FLAG_SYS_SHOAL_TIDE
 	end
 
 ShoalCave_LowTideEntranceRoom_EventScript_SetLowTide:: @ 8236DD5
 	setmaplayoutindex LAYOUT_SHOAL_CAVE_LOW_TIDE_ENTRANCE_ROOM
+	setflag FLAG_SYS_SHOAL_TIDE
 	end
 
 ShoalCave_LowTideEntranceRoom_EventScript_ShellBellExpert:: @ 8236DD9
@@ -29,15 +31,15 @@ ShoalCave_LowTideEntranceRoom_EventScript_ShellBellExpert:: @ 8236DD9
 	msgbox ShoalCave_LowTideEntranceRoom_Text_WouldYouLikeShellBell, MSGBOX_YESNO
 	compare VAR_RESULT, NO
 	goto_if_eq ShoalCave_LowTideEntranceRoom_EventScript_DeclineShellBell
-	checkitemspace ITEM_SHELL_BELL, 1
-	compare VAR_RESULT, FALSE
-	call_if_eq ShoalCave_LowTideEntranceRoom_EventScript_CheckSpaceWillBeFreed
-	compare VAR_RESULT, 2
-	goto_if_eq ShoalCave_LowTideEntranceRoom_EventScript_NoRoomForShellBell
+	@checkitemspace ITEM_SHELL_BELL, 1
+	@compare VAR_RESULT, FALSE
+	@call_if_eq ShoalCave_LowTideEntranceRoom_EventScript_CheckSpaceWillBeFreed
+	@compare VAR_RESULT, 2
+	@goto_if_eq ShoalCave_LowTideEntranceRoom_EventScript_NoRoomForShellBell
 	msgbox ShoalCave_LowTideEntranceRoom_Text_MakeShellBellRightAway, MSGBOX_DEFAULT
 	removeitem ITEM_SHOAL_SALT, 4
 	removeitem ITEM_SHOAL_SHELL, 4
-	giveitem ITEM_SHELL_BELL
+	call GetItem_Shell_Bell
 	compare VAR_RESULT, FALSE
 	goto_if_eq Common_EventScript_ShowBagIsFull
 	msgbox ShoalCave_LowTideEntranceRoom_Text_ExplainShellBell, MSGBOX_DEFAULT
