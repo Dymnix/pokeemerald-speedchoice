@@ -77,7 +77,7 @@ Route104_PrettyPetalFlowerShop_EventScript_WailmerPailGirl:: @ 822A40C
 
 Route104_PrettyPetalFlowerShop_EventScript_GiveWailmerPail:: @ 822A421
 	msgbox Route104_PrettyPetalFlowerShop_Text_YouCanHaveThis, MSGBOX_DEFAULT
-	giveitem ITEM_WAILMER_PAIL
+	call GetItem_Wailmer_Pail
 	msgbox Route104_PrettyPetalFlowerShop_Text_WailmerPailExplanation, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_WAILMER_PAIL
 	release
@@ -91,7 +91,7 @@ Route104_PrettyPetalFlowerShop_EventScript_RandomBerryGirl:: @ 822A442
 	msgbox Route104_PrettyPetalFlowerShop_Text_ImGrowingFlowers, MSGBOX_DEFAULT
 	random 8
 	addvar VAR_RESULT, FIRST_BERRY_INDEX
-	giveitem VAR_RESULT
+	call GetItem_Oran_Berry
 	compare VAR_RESULT, 0
 	goto_if_eq Common_EventScript_ShowBagIsFull
 	setflag FLAG_DAILY_FLOWER_SHOP_RECEIVED_BERRY
