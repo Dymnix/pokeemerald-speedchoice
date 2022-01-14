@@ -45,18 +45,19 @@ MauvilleCity_BikeShop_EventScript_YesFar:: @ 820EC4A
 MauvilleCity_BikeShop_EventScript_GetMachBike:: @ 820EC53
 	msgbox MauvilleCity_BikeShop_Text_ChoseMachBike, MSGBOX_DEFAULT
 	goto GiveBikes
-	goto MauvilleCity_BikeShop_EventScript_ComeBackToSwitchBikes
+	@goto MauvilleCity_BikeShop_EventScript_ComeBackToSwitchBikes
 	end
 
 MauvilleCity_BikeShop_EventScript_GetAcroBike:: @ 820EC6D
 	msgbox MauvilleCity_BikeShop_Text_ChoseAcroBike, MSGBOX_DEFAULT
 	goto GiveBikes
-	goto MauvilleCity_BikeShop_EventScript_ComeBackToSwitchBikes
+	@goto MauvilleCity_BikeShop_EventScript_ComeBackToSwitchBikes
 	end
 
 GiveBikes::
 	call GetItem_Mach_Bike
 	call GetItem_Acro_Bike
+	goto MauvilleCity_BikeShop_EventScript_ComeBackToSwitchBikes
 	return
 
 MauvilleCity_BikeShop_EventScript_ComeBackToSwitchBikes:: @ 820EC87
