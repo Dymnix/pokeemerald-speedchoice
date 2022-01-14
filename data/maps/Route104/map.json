@@ -157,8 +157,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "8",
-      "script": "BerryTreeScript",
-      "flag": "0"
+      "script": "Route104_EventScript_Berry1",
+      "flag": "FLAG_UNUSED_0x49A"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
@@ -183,8 +183,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "10",
-      "script": "BerryTreeScript",
-      "flag": "0"
+      "script": "Route104_EventScript_Berry2",
+      "flag": "FLAG_UNUSED_0x49B"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
@@ -196,8 +196,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "11",
-      "script": "BerryTreeScript",
-      "flag": "0"
+      "script": "Route104_EventScript_Berry3",
+      "flag": "FLAG_UNUSED_0x49C"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
@@ -222,8 +222,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "13",
-      "script": "BerryTreeScript",
-      "flag": "0"
+      "script": "Route104_EventScript_Berry4",
+      "flag": "FLAG_UNUSED_0x49D"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_EXPERT_F",
@@ -261,8 +261,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "BerryTreeScript",
-      "flag": "0"
+      "script": "Route104_EventScript_Berry5",
+      "flag": "FLAG_UNUSED_0x49E"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
@@ -287,8 +287,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "76",
-      "script": "BerryTreeScript",
-      "flag": "0"
+      "script": "Route104_EventScript_Berry6",
+      "flag": "FLAG_UNUSED_0x49F"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
