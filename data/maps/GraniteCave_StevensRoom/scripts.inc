@@ -6,13 +6,16 @@ GraniteCave_StevensRoom_MapScripts:: @ 822DC7A
 GraniteCave_StevensRoom_EventScript_Steven:: @ 822DC7B
 	lock
 	faceplayer
+	checkitem ITEM_LETTER, 1
+	compare VAR_RESULT, FALSE
+	goto_if_eq NOLETTER
 	msgbox GraniteCave_StevensRoom_Text_ImStevenLetterForMe, MSGBOX_DEFAULT
 	setvar VAR_0x8004, ITEM_LETTER
 	call Common_EventScript_PlayerHandedOverTheItem
 	setflag FLAG_DELIVERED_STEVEN_LETTER
 gTMText_14::
 	msgbox GraniteCave_StevensRoom_Text_ThankYouTakeThis, MSGBOX_DEFAULT
-	giveitem ITEM_TM47
+	call GetItem_TM47
 	compare VAR_RESULT, FALSE
 	call_if_eq GraniteCave_StevensRoom_EventScript_BagFull
 	msgbox GraniteCave_StevensRoom_Text_CouldBecomeChampionLetsRegister, MSGBOX_DEFAULT
@@ -50,6 +53,11 @@ gTMText_14::
 	setflag FLAG_HIDE_RUSTBORO_CITY_DEVON_CORP_3F_EMPLOYEE
 	setvar VAR_REGISTER_BIRCH_STATE, 1 @ fix for no Birch on Route 110
 StevenRoomEventEnd::
+	release
+	end
+
+NOLETTER::
+	msgbox GraniteCave_StevensRoom_Text_ImStevenNoLetter, MSGBOX_DEFAULT
 	release
 	end
 
@@ -107,6 +115,11 @@ GraniteCave_StevensRoom_Text_ImStevenLetterForMe: @ 822DD5A
 	.string "so I travel here and there.\p"
 	.string "Oh?\n"
 	.string "A LETTER for me?$"
+
+GraniteCave_StevensRoom_Text_ImStevenNoLetter: @ 822DD5A
+	.string "My name is STEVEN.\p"
+	.string "I'm interested in rare stones,\n"
+	.string "so I travel here and there.$"
 
 GraniteCave_StevensRoom_Text_ThankYouTakeThis: @ 822DDBD
 	.string "STEVEN: Okay, thank you.\p"
