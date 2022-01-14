@@ -50,7 +50,7 @@ MauvilleCity_BikeShop_EventScript_GetMachBike:: @ 820EC53
 
 MauvilleCity_BikeShop_EventScript_GetAcroBike:: @ 820EC6D
 	msgbox MauvilleCity_BikeShop_Text_ChoseAcroBike, MSGBOX_DEFAULT
-	giveitem ITEM_ACRO_BIKE
+	goto GiveBikes
 	goto MauvilleCity_BikeShop_EventScript_ComeBackToSwitchBikes
 	end
 
