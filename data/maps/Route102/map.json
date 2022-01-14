@@ -113,8 +113,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "BerryTreeScript",
-      "flag": "0"
+      "script": "Route102_EventScript_Berry1",
+      "flag": "FLAG_UNUSED_0x494" 
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
@@ -126,8 +126,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "BerryTreeScript",
-      "flag": "0"
+      "script": "Route102_EventScript_Berry2",
+      "flag": "FLAG_UNUSED_0x495"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
