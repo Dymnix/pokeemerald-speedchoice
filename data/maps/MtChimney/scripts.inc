@@ -472,7 +472,7 @@ MtChimney_EventScript_MeteoriteMachine:: @ 822F0E4
 	compare VAR_RESULT, NO
 	goto_if_eq MtChimney_EventScript_LeaveMeteoriteAlone
 	msgbox MtChimney_Text_PlayerRemovedMeteorite, MSGBOX_DEFAULT
-	giveitem ITEM_METEORITE
+	call GetItem_Meteorite
 	setflag FLAG_RECEIVED_METEORITE
 	releaseall
 	end
