@@ -17,16 +17,20 @@ DesertUnderpass_EventScript_Fossil:: @ 823AF41
 	end
 
 DesertUnderpass_EventScript_GiveClawFossil:: @ 823AF57
-	giveitem ITEM_CLAW_FOSSIL
+	goto GiveUnderFossil
 	removeobject LOCALID_FOSSIL
 	release
 	end
 
 DesertUnderpass_EventScript_GiveRootFossil:: @ 823AF68
-	giveitem ITEM_ROOT_FOSSIL
+	goto GiveUnderFossil
 	removeobject LOCALID_FOSSIL
 	release
 	end
+
+GiveUnderFossil::
+	call GetItem_Claw_Fossil
+	return
 
 @ Unused
 DesertUnderpass_Text_FoundRootFossil:: @ 823AF79
