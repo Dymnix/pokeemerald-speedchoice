@@ -74,8 +74,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "69",
-      "script": "BerryTreeScript",
-      "flag": "0"
+      "script": "Route115_EventScript_Berry1",
+      "flag": "0x4B4"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
@@ -87,8 +87,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "70",
-      "script": "BerryTreeScript",
-      "flag": "0"
+      "script": "Route115_EventScript_Berry2",
+      "flag": "0x4B5"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
@@ -100,8 +100,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "71",
-      "script": "BerryTreeScript",
-      "flag": "0"
+      "script": "Route115_EventScript_Berry3",
+      "flag": "0x4B6"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GIRL_3",
@@ -191,8 +191,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "55",
-      "script": "BerryTreeScript",
-      "flag": "0"
+      "script": "Route115_EventScript_Berry4",
+      "flag": "0x4B7"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
@@ -204,8 +204,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "56",
-      "script": "BerryTreeScript",
-      "flag": "0"
+       "script": "Route115_EventScript_Berry5",
+      "flag": "0x4B8"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
