@@ -17,13 +17,13 @@ DesertUnderpass_EventScript_Fossil:: @ 823AF41
 	end
 
 DesertUnderpass_EventScript_GiveClawFossil:: @ 823AF57
-	goto GiveUnderFossil
+	call GiveUnderFossil
 	removeobject LOCALID_FOSSIL
 	release
 	end
 
 DesertUnderpass_EventScript_GiveRootFossil:: @ 823AF68
-	goto GiveUnderFossil
+	call GiveUnderFossil
 	removeobject LOCALID_FOSSIL
 	release
 	end
