@@ -105,8 +105,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "19",
-      "script": "BerryTreeScript",
-      "flag": "0"
+      "script": "Route111_EventScript_Berry3",
+      "flag": "0x4AD"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
@@ -118,8 +118,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "20",
-      "script": "BerryTreeScript",
-      "flag": "0"
+      "script": "Route111_EventScript_Berry4",
+      "flag": "0x4AE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_3",
@@ -274,8 +274,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "80",
-      "script": "BerryTreeScript",
-      "flag": "0"
+      "script": "Route111_EventScript_Berry1",
+      "flag": "0x4AF"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
@@ -287,8 +287,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "81",
-      "script": "BerryTreeScript",
-      "flag": "0"
+      "script": "Route111_EventScript_Berry2",
+      "flag": "0x4B0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_REPORTER_F",
