@@ -31,7 +31,7 @@ Route113_GlassWorkshop_EventScript_GlassWorker:: @ 826ED1E
 	compare VAR_GLASS_WORKSHOP_STATE, 1
 	goto_if_eq Route113_GlassWorkshop_EventScript_ExplainSootSack
 	msgbox Route113_GlassWorkshop_Text_GoCollectAshWithThis, MSGBOX_DEFAULT
-	giveitem ITEM_SOOT_SACK
+	call GetItem_Soot_Sack
 	setvar VAR_GLASS_WORKSHOP_STATE, 1
 	msgbox Route113_GlassWorkshop_Text_ExplainSootSack, MSGBOX_DEFAULT
 	release
