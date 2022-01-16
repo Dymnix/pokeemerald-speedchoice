@@ -584,44 +584,44 @@
       "script": "Route104_EventScript_TrainerTipsDoubleBattles"
     },
     {
-      "type": "hidden_item",
+      "type": "sign",
       "x": 7,
       "y": 6,
       "elevation": 3,
-      "item": "ITEM_SUPER_POTION",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_SUPER_POTION"
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route104_EventScript_Hidden_Super_Potion"
     },
     {
-      "type": "hidden_item",
+      "type": "sign",
       "x": 3,
       "y": 9,
       "elevation": 3,
-      "item": "ITEM_POKE_BALL",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_POKE_BALL"
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route104_EventScript_Hidden_Poke_Ball"
     },
     {
-      "type": "hidden_item",
+      "type": "sign",
       "x": 14,
       "y": 55,
       "elevation": 3,
-      "item": "ITEM_POTION",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_POTION"
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route104_EventScript_Hidden_Potion"
     },
     {
-      "type": "hidden_item",
+      "type": "sign",
       "x": 16,
       "y": 72,
       "elevation": 3,
-      "item": "ITEM_ANTIDOTE",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_ANTIDOTE"
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route104_EventScript_Hidden_Antidote"
     },
     {
-      "type": "hidden_item",
+      "type": "sign",
       "x": 16,
       "y": 64,
       "elevation": 3,
-      "item": "ITEM_HEART_SCALE",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_HEART_SCALE"
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route104_EventScript_Hidden_Heart_Scale"
     }
   ]
 }
