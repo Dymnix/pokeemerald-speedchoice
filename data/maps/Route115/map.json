@@ -446,12 +446,12 @@
       "secret_base_id": "SECRET_BASE_RED_CAVE3_1"
     },
     {
-      "type": "hidden_item",
+      "type": "sign",
       "x": 15,
       "y": 49,
       "elevation": 3,
-      "item": "ITEM_HEART_SCALE",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_115_HEART_SCALE"
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "Route115_EventScript_Hidden_Heart_Scale"
     }
   ]
 }
