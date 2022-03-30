@@ -40,8 +40,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "31",
-      "script": "BerryTreeScript",
-      "flag": "0"
+      "script": "Route118_EventScript_Berry1",
+      "flag": "FLAG_UNUSED_0x4B9"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
@@ -66,8 +66,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "33",
-      "script": "BerryTreeScript",
-      "flag": "0"
+      "script": "Route118_EventScript_Berry3",
+      "flag": "FLAG_UNUSED_0x4BA"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_5",
@@ -402,20 +402,20 @@
       "secret_base_id": "SECRET_BASE_TREE2_1"
     },
     {
-      "type": "hidden_item",
+      "type": "sign",
       "x": 31,
       "y": 13,
       "elevation": 3,
-      "item": "ITEM_IRON",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_118_IRON"
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route118_EventScript_Hidden_Iron"
     },
     {
-      "type": "hidden_item",
+      "type": "sign",
       "x": 12,
       "y": 14,
       "elevation": 3,
-      "item": "ITEM_HEART_SCALE",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_118_HEART_SCALE"
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route118_EventScript_Hidden_Heart_Scale"
     }
   ]
 }
